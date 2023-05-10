@@ -5,5 +5,5 @@ export const CodeImgContainer = styled.div`
     overflow-x: visible;
     margin-top: -275px;
     z-index: -2;
-
+    height: 420px;
 `

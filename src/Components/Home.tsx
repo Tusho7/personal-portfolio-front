@@ -28,69 +28,70 @@ function Home() {
 
   return (
     <>
-    
-    <HomeMainContainer>
-      <div>
-        <LogoImg src={Logo} />
-      </div>
-      <SecondLogoContainer>
-        <SecondLogoImg src={SecondLogo} />
-      </SecondLogoContainer>
+      <HomeMainContainer>
+        <div>
+          <LogoImg src={Logo} />
+        </div>
+        <SecondLogoContainer>
+          <SecondLogoImg src={SecondLogo} />
+        </SecondLogoContainer>
 
-      <HomeTitlesContainer>
-        <HomeTitle>
-          <span>F</span>
-          <span>u</span>
-          <span>l</span>
-          <span>l</span>
-          <span>-</span>
-          <span>S</span>
-          <span>t</span>
-          <span>a</span>
-          <span>c</span>
-          <span>k</span>
-          <span> </span>
-          <span>S</span>
-          <span>o</span>
-          <span>f</span>
-          <span>t</span>
-          <span>w</span>
-          <span>a</span>
-          <span>r</span>
-          <span>e</span>
-          <span> </span>
-          <span>D</span>
-          <span>e</span>
-          <span>v</span>
-          <span>e</span>
-          <span>l</span>
-          <span>o</span>
-          <span>p</span>
-          <span>e</span>
-          <span>r</span>
-        </HomeTitle>
-        <HomeDescription>
-          Resolving design problems, building smart user interfaces and useful
-          interactions, developing rich web applications and seamless web
-          experiences.
-        </HomeDescription>
-        <AboutContainer>
-          <HomeAboutMe>About me</HomeAboutMe>
-          <AboutImg
-            src={AboutLogo}
-            onClick={handleAboutImgClick}
-            style={{
-              transform: isAboutImgRotated ? "rotate(1deg)" : "rotate(-90deg)",
-            }}
-          />
-        </AboutContainer>
-      </HomeTitlesContainer>
-    </HomeMainContainer>
+        <HomeTitlesContainer>
+          <HomeTitle>
+            <span>F</span>
+            <span>u</span>
+            <span>l</span>
+            <span>l</span>
+            <span>-</span>
+            <span>S</span>
+            <span>t</span>
+            <span>a</span>
+            <span>c</span>
+            <span>k</span>
+            <span> </span>
+            <span>S</span>
+            <span>o</span>
+            <span>f</span>
+            <span>t</span>
+            <span>w</span>
+            <span>a</span>
+            <span>r</span>
+            <span>e</span>
+            <span> </span>
+            <span>D</span>
+            <span>e</span>
+            <span>v</span>
+            <span>e</span>
+            <span>l</span>
+            <span>o</span>
+            <span>p</span>
+            <span>e</span>
+            <span>r</span>
+          </HomeTitle>
+          <HomeDescription>
+            Resolving design problems, building smart user interfaces and useful
+            interactions, developing rich web applications and seamless web
+            experiences.
+          </HomeDescription>
+          <AboutContainer>
+            <HomeAboutMe>About me</HomeAboutMe>
+            <AboutImg
+              src={AboutLogo}
+              onClick={handleAboutImgClick}
+              style={{
+                transform: isAboutImgRotated
+                  ? "rotate(1deg)"
+                  : "rotate(-90deg)",
+              }}
+            />
+          </AboutContainer>
+        </HomeTitlesContainer>
+      </HomeMainContainer>
 
-    <CodeImgContainer>
-        <CodeImg src={CodeLogo}/>
+      <CodeImgContainer>
+        <CodeImg src={CodeLogo} />
         <PurpleRomb src={PurpleRombTwo} />
-        </CodeImgContainer>
+      </CodeImgContainer>
     </>
   );
 }
