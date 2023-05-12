@@ -5,5 +5,5 @@ export const CirclesContainer = styled.div`
     gap: 15px;
     align-items: center;
     justify-content: center;
-    margin-top: 20px;    
+    margin-top: 60px;    
 `
