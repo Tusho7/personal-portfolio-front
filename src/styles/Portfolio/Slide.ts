@@ -32,5 +32,6 @@ export const Slide = styled.div<SlideProps>`
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 50px;
+  height: 521.66px;
 `;

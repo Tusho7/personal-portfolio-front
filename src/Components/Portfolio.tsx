@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
 import AboutLogo from "../assets/about.svg";
 import VisitLogo from "../assets/visit-logo.svg"
-import JavascriptLogo from "../assets/javascript-logo.jpg";
+import CodeLogo from "../assets/codelogo.jpg"
+import SpheroMd from "../assets/sphere_md.png";
 import { SeeProjectContainer } from "../styles/Portfolio/SeeProjectContainer";
 import { Slide } from "../styles/Portfolio/Slide";
 import { PortfolioMainContainer } from "../styles/Portfolio/PortfolioMainContainer";
@@ -24,7 +25,8 @@ import { ProjectImage } from "../styles/Portfolio/ProjectImage";
 import { VisitContainer } from "../styles/Portfolio/VisitContainer";
 import { VisitContainerLink } from "../styles/Portfolio/VisitContainerLink";
 import { IfYouWantSee } from "../styles/Portfolio/IfYouWantSee";
-import { JsLogo } from "../styles/Portfolio/JsLogo";
+import { MediumSpheroImg } from "../styles/Portfolio/MediumSpheroImg";
+import { CodeLogoImg } from "../styles/Portfolio/CodeLogoImg";
 
 
 function Portfolio() {
@@ -75,6 +77,7 @@ function Portfolio() {
                   style={{ transform: "rotate(270deg)" }}
                 />
               </SeeProjectContainer>
+              <MediumSpheroImg src={SpheroMd} />
             </Slide>
           </SpheroContainer>
         )}
@@ -222,7 +225,7 @@ function Portfolio() {
           <Slide visible={true}>
             <IfYouWantSee>
               <div>
-                <JsLogo src={JavascriptLogo} />
+                <CodeLogoImg src={CodeLogo} />
               </div>
               <p>
                 If you want to see more projects visit my{" "}

@@ -6,6 +6,6 @@ export const SpheroContainer = styled.div`
     background-image: url(${BigSphero});
     background-size: 120px 120px;
     background-repeat: no-repeat;
-    background-position: top center;
+    background-position: center 85px;
   }
 `;
