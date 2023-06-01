@@ -10,7 +10,7 @@
 
 ### Prerequisites
 
-- <img src="public/logos/typescript.png" with="25" style="top: 8px"/>\_Typescript @4 and up
+- <img src="public/logos/typescript.png" width="25" style="top: 8px"/>\_Typescript @4 and up
 
 ### Tech Stack
 
