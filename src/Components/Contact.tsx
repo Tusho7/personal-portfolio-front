@@ -5,7 +5,6 @@ import CodeLogo from "../assets/code-logo.svg";
 import { CodeLogoContainer } from "../styles/Contact-styles/CodeLogoContainer";
 import { CodeImg } from "../styles/Home-Styles/CodeImg";
 import { MediaTitle } from "../styles/Contact-styles/MediaTitle";
-import { PhoneCall } from "../styles/Contact-styles/PhoneCall";
 
 function Contact() {
   return (
