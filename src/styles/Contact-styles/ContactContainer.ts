@@ -17,5 +17,14 @@ export const ContactContainer = styled.div`
     h1{
         font-size: 22px;
         padding-top: 10px;
+        @media (min-width: 768px){
+            width: 50%;
+            margin: auto;
+        }
+    }
+    @media (min-width: 768px) {
+        p{
+            font-size: 20px;
+        }
     }
 `

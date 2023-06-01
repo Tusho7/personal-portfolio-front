@@ -1,10 +1,14 @@
-import styled from "styled-components"
-
+import styled from "styled-components";
 
 export const DarkCubeLogo = styled.img`
-    width: 100px;
-    height: 100px;
-    position: absolute;
-    top: 195px;
-    left: 30px;
-`
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 195px;
+  left: 30px;
+  @media (min-width: 768px) {
+    height: 150px;
+    width: 150px;
+    top: 120px;
+  }
+`;

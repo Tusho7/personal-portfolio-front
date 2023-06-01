@@ -38,4 +38,8 @@ export const HomeTitle = styled.h1`
     animation: ${burstAnimation} 1s ease-in-out infinite;
     cursor: default;
   }
+  @media (min-width: 768px) {
+    width: 60%;
+    font-size: 50px
+  }
 `;

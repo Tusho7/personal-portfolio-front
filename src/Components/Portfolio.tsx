@@ -27,6 +27,8 @@ import { VisitContainerLink } from "../styles/Portfolio/VisitContainerLink";
 import { IfYouWantSee } from "../styles/Portfolio/IfYouWantSee";
 import { MediumSpheroImg } from "../styles/Portfolio/MediumSpheroImg";
 import { CodeLogoImg } from "../styles/Portfolio/CodeLogoImg";
+import { SlidesDescription } from "../styles/Portfolio/SlidesDescription";
+import { SlideProjectDescription } from "../styles/Portfolio/SlideProjectDescription";
 
 
 function Portfolio() {
@@ -52,7 +54,7 @@ function Portfolio() {
       <PortfolioMainContainer>
         {currentSlide === 0 && (
           <SpheroContainer>
-            <Slide visible={true}>
+            <Slide visible={true} isCurrentSlide0={currentSlide === 0}>
               <MainTitle>Portfolio & Previous Projects</MainTitle>
               <Description>
                 I have built various different projects to fit different aspects
@@ -83,17 +85,19 @@ function Portfolio() {
         )}
 
         {currentSlide === 1 && (
-          <Slide visible={true}>
+          <Slide visible={true} isCurrentSlide0={currentSlide === 1}>
             <SlideContainer>
               <ProjectImage
                 src={`https://nice-lime-shark-garb.cyclic.app/images/${
                   project[currentSlide - 1].picture
                 }`}
               />
+              <SlideProjectDescription>
+
               <Title>{project[currentSlide - 1]?.title}</Title>
-              <Description>
+              <SlidesDescription>
                 {project[currentSlide - 1]?.description}
-              </Description>
+              </SlidesDescription>
               <Category>{project[currentSlide - 1]?.category}</Category>
               <Built>
                 <span>Built With:</span> {project[currentSlide - 1]?.built}
@@ -124,23 +128,26 @@ function Portfolio() {
                   <img src={VisitLogo} style={{ transform: "rotate(270deg)" }} />
                 </VisitContainer>
               </div>
+              </SlideProjectDescription>
             </SlideContainer>
 
           </Slide>
         )}
 
         {currentSlide === 2 && (
-          <Slide visible={true}>
+          <Slide visible={true} isCurrentSlide0={currentSlide === 2}>
             <SlideContainer>
               <ProjectImage
                 src={`https://nice-lime-shark-garb.cyclic.app/images/${
                   project[currentSlide - 1].picture
                 }`}
               />
+              <SlideProjectDescription>
+                
               <Title>{project[currentSlide - 1]?.title}</Title>
-              <Description>
+              <SlidesDescription>
                 {project[currentSlide - 1]?.description}
-              </Description>
+              </SlidesDescription>
               <Category>{project[currentSlide - 1]?.category}</Category>
               <Built>
                 <span>Built With:</span> {project[currentSlide - 1]?.built}
@@ -171,22 +178,25 @@ function Portfolio() {
                   <img src={VisitLogo} style={{ transform: "rotate(270deg)" }} />
                 </VisitContainer>
               </div>
+              </SlideProjectDescription>
             </SlideContainer>
           </Slide>
         )}
 
         {currentSlide === 3 && (
-          <Slide visible={true}>
+          <Slide visible={true} isCurrentSlide0={currentSlide === 3}>
             <SlideContainer>
               <ProjectImage
                 src={`https://nice-lime-shark-garb.cyclic.app/images/${
                   project[currentSlide - 1].picture
                 }`}
               />
+              <SlideProjectDescription>
+
               <Title>{project[currentSlide - 1]?.title}</Title>
-              <Description>
+              <SlidesDescription>
                 {project[currentSlide - 1]?.description}
-              </Description>
+              </SlidesDescription>
               <Category>{project[currentSlide - 1]?.category}</Category>
               <Built>
                 <span>Built With:</span> {project[currentSlide - 1]?.built}
@@ -217,12 +227,13 @@ function Portfolio() {
                   <img src={VisitLogo} style={{ transform: "rotate(270deg)" }} />
                 </VisitContainer>
               </div>
+              </SlideProjectDescription>
             </SlideContainer>
           </Slide>
         )}
 
         {currentSlide === 4 && (
-          <Slide visible={true}>
+          <Slide visible={true} isCurrentSlide0={currentSlide === 4}>
             <IfYouWantSee>
               <div>
                 <CodeLogoImg src={CodeLogo} />

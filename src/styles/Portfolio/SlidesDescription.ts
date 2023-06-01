@@ -1,9 +1,9 @@
 import styled from "styled-components";
 
-export const Category = styled.p`
+export const SlidesDescription = styled.p`
   color: #f0f8ff;
-  font-size: 15px;
+  font-size: 18px;
   @media (min-width: 768px){
-    font-size: 20px;
+    font-size: 22px;
   }
 `;

@@ -8,4 +8,10 @@ export const CodeImgAbout = styled.img`
   left: 75px;
   filter: blur(5px);
   transform: scaleY(1.2);
+  @media (min-width: 768px) {
+    left: 270px;
+    height: 550px;
+    width: 600px;
+    top: -100px;
+  }
 `;

@@ -5,4 +5,7 @@ export const GlobeStyles = styled.div`
   justify-content: center;
   align-items: center;
   width: 100%;
+  @media (min-width: 768px){
+    padding-top: 80px;
+  }
 `;

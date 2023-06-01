@@ -13,8 +13,11 @@ function About() {
   return (
     <>
     <AboutMainContainer>
+      <div>
       <AboutTitle>Hi, I'm Sandro Tushurashvili Web Developer</AboutTitle>
+      <br></br>
       <AboutDescription>Full Stack Developer / Javascript Fan</AboutDescription>
+      </div>
       <AboutSecondDescription>
         Problem solver, well-organised person, loyal employee with high
         attention to detail. Fan of coding.

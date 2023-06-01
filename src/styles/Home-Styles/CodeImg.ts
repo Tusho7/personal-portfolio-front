@@ -9,4 +9,8 @@ export const CodeImg = styled.img`
     filter: blur(5px);
     transform: scaleY(1.2);
     z-index: -1;
+    @media (min-width: 768px){
+        height: 550px;
+        width: 600px;
+    }
 `

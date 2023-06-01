@@ -1,9 +1,7 @@
 import Logo from "../assets/header-logo.svg";
 import SecondLogo from "../assets/side-dots.png";
-import AboutLogo from "../assets/about.svg";
 import CodeLogo from "../assets/code-logo.svg";
 import PurpleRombTwo from "../assets/purple_romb2.png";
-import { HomeAboutMe } from "../styles/Home-Styles/HomeAboutMe";
 import { HomeDescription } from "../styles/Home-Styles/HomeDescription";
 import { HomeMainContainer } from "../styles/Home-Styles/HomeMainContainer";
 import { HomeTitle } from "../styles/Home-Styles/HomeTitle";
@@ -12,20 +10,11 @@ import { LogoImg } from "../styles/Home-Styles/LogoImg";
 import { SecondLogoContainer } from "../styles/Home-Styles/SecondLogoContainer";
 import { SecondLogoImg } from "../styles/Home-Styles/SecondLogoImg";
 import { AboutContainer } from "../styles/Home-Styles/AboutContainer";
-import { AboutImg } from "../styles/Home-Styles/AboutImg";
-import { useState } from "react";
 import { CodeImg } from "../styles/Home-Styles/CodeImg";
 import { CodeImgContainer } from "../styles/Home-Styles/CodeImgContainer";
 import { PurpleRomb } from "../styles/Home-Styles/PurpleRomb";
 
 function Home() {
-  const [isAboutImgRotated, setIsImgRotated] = useState(false);
-
-  const handleAboutImgClick = () => {
-    setIsImgRotated((prevState) => !prevState);
-    console.log(isAboutImgRotated);
-  };
-
   return (
     <>
       <HomeMainContainer>
@@ -74,16 +63,6 @@ function Home() {
             experiences.
           </HomeDescription>
           <AboutContainer>
-            <HomeAboutMe>About me</HomeAboutMe>
-            <AboutImg
-              src={AboutLogo}
-              onClick={handleAboutImgClick}
-              style={{
-                transform: isAboutImgRotated
-                  ? "rotate(1deg)"
-                  : "rotate(-90deg)",
-              }}
-            />
           </AboutContainer>
         </HomeTitlesContainer>
       </HomeMainContainer>

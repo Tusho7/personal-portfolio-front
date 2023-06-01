@@ -6,4 +6,8 @@ export const SpheroSmall = styled.img`
   position: absolute;
   top: 300px;
   left: 230px;
+  @media (min-width: 768px) {
+    left: 340px;
+    top: 340px;
+  }
 `;

@@ -13,3 +13,9 @@ body{
   font-family: "Source Sans Pro",sans-serif;
   padding: 20px;
 }
+
+@media (min-width: 768px) {
+  body {
+    padding: 30px;
+  }
+}
