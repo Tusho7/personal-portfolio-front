@@ -7,4 +7,8 @@ export const Svg = styled.svg`
         width: 55px;
         height: 55px;
     }
+    @media (min-width: 1440px){
+        width: 100px;
+        height: 100px;
+    }
 `

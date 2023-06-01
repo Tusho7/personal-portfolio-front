@@ -27,4 +27,15 @@ export const ContactContainer = styled.div`
             font-size: 20px;
         }
     }
+    @media (min-width: 1440px){
+        flex-direction: row-reverse;
+        align-items: center;
+        padding-top: 150px;
+        h1{
+            display: none;
+        }
+        p{
+            font-size: 25px;
+        }
+    }
 `

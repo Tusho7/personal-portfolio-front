@@ -6,4 +6,8 @@ export const ProjectImage = styled.img`
         width: 330px;
         height: 350px;
     }
+    @media (min-width: 1440px){
+        width: 450px;
+        height: 450px;
+    }
 `

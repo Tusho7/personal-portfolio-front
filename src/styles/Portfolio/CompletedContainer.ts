@@ -5,4 +5,9 @@ export const CompletedContainer = styled.div`
     gap: 7px;
     align-items: center;
     color: #f0f8ff;
+    @media (min-width: 1440px){
+        p{
+            font-size: 18px;
+        }
+    }
 `

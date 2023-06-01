@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import AboutLogo from "../assets/about.svg";
-import VisitLogo from "../assets/visit-logo.svg"
-import CodeLogo from "../assets/codelogo.jpg"
+import VisitLogo from "../assets/visit-logo.svg";
+import CodeLogo from "../assets/codelogo.jpg";
 import SpheroMd from "../assets/sphere_md.png";
 import { SeeProjectContainer } from "../styles/Portfolio/SeeProjectContainer";
 import { Slide } from "../styles/Portfolio/Slide";
@@ -29,7 +29,7 @@ import { MediumSpheroImg } from "../styles/Portfolio/MediumSpheroImg";
 import { CodeLogoImg } from "../styles/Portfolio/CodeLogoImg";
 import { SlidesDescription } from "../styles/Portfolio/SlidesDescription";
 import { SlideProjectDescription } from "../styles/Portfolio/SlideProjectDescription";
-
+import { ViewandVisitContainer } from "../styles/Portfolio/ViewandVisitContainer";
 
 function Portfolio() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -55,7 +55,37 @@ function Portfolio() {
         {currentSlide === 0 && (
           <SpheroContainer>
             <Slide visible={true} isCurrentSlide0={currentSlide === 0}>
-              <MainTitle>Portfolio & Previous Projects</MainTitle>
+              <MainTitle>
+                <span>P</span>
+                <span>o</span>
+                <span>r</span>
+                <span>t</span>
+                <span>f</span>
+                <span>o</span>
+                <span>l</span>
+                <span>i</span>
+                <span>o</span>
+                <span> </span>
+                <span>&</span>
+                <span> </span>
+                <span>P</span>
+                <span>r</span>
+                <span>e</span>
+                <span>v</span>
+                <span>i</span>
+                <span>o</span>
+                <span>u</span>
+                <span>s</span>
+                <span> </span>
+                <span>p</span>
+                <span>r</span>
+                <span>o</span>
+                <span>j</span>
+                <span>e</span>
+                <span>c</span>
+                <span>t</span>
+                <span>s</span>
+              </MainTitle>
               <Description>
                 I have built various different projects to fit different aspects
                 of the client's business. If you want to see more examples of my
@@ -93,44 +123,56 @@ function Portfolio() {
                 }`}
               />
               <SlideProjectDescription>
+                <Title>{project[currentSlide - 1]?.title}</Title>
+                <SlidesDescription>
+                  {project[currentSlide - 1]?.description}
+                </SlidesDescription>
+                <Category>{project[currentSlide - 1]?.category}</Category>
+                <Built>
+                  <span>Built With:</span> {project[currentSlide - 1]?.built}
+                </Built>
+                <CompletedContainer>
+                  <p>{project[currentSlide - 1]?.status}</p>
+                  <img
+                    src={`https://nice-lime-shark-garb.cyclic.app/images/${
+                      project[currentSlide - 1].statusImg
+                    }`}
+                  />
+                </CompletedContainer>
 
-              <Title>{project[currentSlide - 1]?.title}</Title>
-              <SlidesDescription>
-                {project[currentSlide - 1]?.description}
-              </SlidesDescription>
-              <Category>{project[currentSlide - 1]?.category}</Category>
-              <Built>
-                <span>Built With:</span> {project[currentSlide - 1]?.built}
-              </Built>
-              <CompletedContainer>
-                <p>{project[currentSlide - 1]?.status}</p>
-                <img
-                  src={`https://nice-lime-shark-garb.cyclic.app/images/${
-                    project[currentSlide - 1].statusImg
-                  }`}
-                />
-              </CompletedContainer>
+                <ViewandVisitContainer>
+                  <VisitContainer>
+                    <p>
+                      <VisitContainerLink
+                        href="https://github.com/Tusho7/audiophile-ecommerce-website-front"
+                        target="_blank"
+                      >
+                        View the Code
+                      </VisitContainerLink>
+                    </p>
+                    <img
+                      src={VisitLogo}
+                      style={{ transform: "rotate(270deg)" }}
+                    />
+                  </VisitContainer>
 
-              <div>
-                <VisitContainer>
-                  <p>
-                    <VisitContainerLink href="https://github.com/Tusho7/audiophile-ecommerce-website-front" target="_blank">
-                      View the Code
-                    </VisitContainerLink>
-                  </p>
-                  <img src={VisitLogo} style={{ transform: "rotate(270deg)" }} />
-                </VisitContainer>
-
-                <VisitContainer>
-                  <p>
-                    <VisitContainerLink href="https://audiophile-ecommerce-7e976.firebaseapp.com/" target="_blank" >Visit the App</VisitContainerLink>
-                  </p>
-                  <img src={VisitLogo} style={{ transform: "rotate(270deg)" }} />
-                </VisitContainer>
-              </div>
+                  <VisitContainer>
+                    <p>
+                      <VisitContainerLink
+                        href="https://audiophile-ecommerce-7e976.firebaseapp.com/"
+                        target="_blank"
+                      >
+                        Visit the App
+                      </VisitContainerLink>
+                    </p>
+                    <img
+                      src={VisitLogo}
+                      style={{ transform: "rotate(270deg)" }}
+                    />
+                  </VisitContainer>
+                </ViewandVisitContainer>
               </SlideProjectDescription>
             </SlideContainer>
-
           </Slide>
         )}
 
@@ -143,41 +185,54 @@ function Portfolio() {
                 }`}
               />
               <SlideProjectDescription>
-                
-              <Title>{project[currentSlide - 1]?.title}</Title>
-              <SlidesDescription>
-                {project[currentSlide - 1]?.description}
-              </SlidesDescription>
-              <Category>{project[currentSlide - 1]?.category}</Category>
-              <Built>
-                <span>Built With:</span> {project[currentSlide - 1]?.built}
-              </Built>
-              <CompletedContainer>
-                <p>{project[currentSlide - 1]?.status}</p>
-                <img
-                  src={`https://nice-lime-shark-garb.cyclic.app/images/${
-                    project[currentSlide - 1].statusImg
-                  }`}
-                />
-              </CompletedContainer>
+                <Title>{project[currentSlide - 1]?.title}</Title>
+                <SlidesDescription>
+                  {project[currentSlide - 1]?.description}
+                </SlidesDescription>
+                <Category>{project[currentSlide - 1]?.category}</Category>
+                <Built>
+                  <span>Built With:</span> {project[currentSlide - 1]?.built}
+                </Built>
+                <CompletedContainer>
+                  <p>{project[currentSlide - 1]?.status}</p>
+                  <img
+                    src={`https://nice-lime-shark-garb.cyclic.app/images/${
+                      project[currentSlide - 1].statusImg
+                    }`}
+                  />
+                </CompletedContainer>
 
-              <div>
-                <VisitContainer>
-                  <p>
-                    <VisitContainerLink href="https://github.com/Tusho7/entertainment-web-app-front" target="_blank">
-                      View the Code
-                    </VisitContainerLink>
-                  </p>
-                  <img src={VisitLogo} style={{ transform: "rotate(270deg)" }} />
-                </VisitContainer>
+                <ViewandVisitContainer>
+                  <VisitContainer>
+                    <p>
+                      <VisitContainerLink
+                        href="https://github.com/Tusho7/entertainment-web-app-front"
+                        target="_blank"
+                      >
+                        View the Code
+                      </VisitContainerLink>
+                    </p>
+                    <img
+                      src={VisitLogo}
+                      style={{ transform: "rotate(270deg)" }}
+                    />
+                  </VisitContainer>
 
-                <VisitContainer>
-                  <p>
-                    <VisitContainerLink href="https://entertainment-web-app-ade77.web.app/" target="_blank" >Visit the App</VisitContainerLink>
-                  </p>
-                  <img src={VisitLogo} style={{ transform: "rotate(270deg)" }} />
-                </VisitContainer>
-              </div>
+                  <VisitContainer>
+                    <p>
+                      <VisitContainerLink
+                        href="https://entertainment-web-app-ade77.web.app/"
+                        target="_blank"
+                      >
+                        Visit the App
+                      </VisitContainerLink>
+                    </p>
+                    <img
+                      src={VisitLogo}
+                      style={{ transform: "rotate(270deg)" }}
+                    />
+                  </VisitContainer>
+                </ViewandVisitContainer>
               </SlideProjectDescription>
             </SlideContainer>
           </Slide>
@@ -192,41 +247,54 @@ function Portfolio() {
                 }`}
               />
               <SlideProjectDescription>
+                <Title>{project[currentSlide - 1]?.title}</Title>
+                <SlidesDescription>
+                  {project[currentSlide - 1]?.description}
+                </SlidesDescription>
+                <Category>{project[currentSlide - 1]?.category}</Category>
+                <Built>
+                  <span>Built With:</span> {project[currentSlide - 1]?.built}
+                </Built>
+                <CompletedContainer>
+                  <p>{project[currentSlide - 1]?.status}</p>
+                  <img
+                    src={`https://nice-lime-shark-garb.cyclic.app/images/${
+                      project[currentSlide - 1].statusImg
+                    }`}
+                  />
+                </CompletedContainer>
 
-              <Title>{project[currentSlide - 1]?.title}</Title>
-              <SlidesDescription>
-                {project[currentSlide - 1]?.description}
-              </SlidesDescription>
-              <Category>{project[currentSlide - 1]?.category}</Category>
-              <Built>
-                <span>Built With:</span> {project[currentSlide - 1]?.built}
-              </Built>
-              <CompletedContainer>
-                <p>{project[currentSlide - 1]?.status}</p>
-                <img
-                  src={`https://nice-lime-shark-garb.cyclic.app/images/${
-                    project[currentSlide - 1].statusImg
-                  }`}
-                />
-              </CompletedContainer>
+                <ViewandVisitContainer>
+                  <VisitContainer>
+                    <p>
+                      <VisitContainerLink
+                        href="https://github.com/Tusho7/job-listing-sandro-front"
+                        target="_blank"
+                      >
+                        View the Code
+                      </VisitContainerLink>
+                    </p>
+                    <img
+                      src={VisitLogo}
+                      style={{ transform: "rotate(270deg)" }}
+                    />
+                  </VisitContainer>
 
-              <div>
-                <VisitContainer>
-                  <p>
-                    <VisitContainerLink href="https://github.com/Tusho7/job-listing-sandro-front" target="_blank">
-                      View the Code
-                    </VisitContainerLink>
-                  </p>
-                  <img src={VisitLogo} style={{ transform: "rotate(270deg)" }} />
-                </VisitContainer>
-
-                <VisitContainer>
-                  <p>
-                    <VisitContainerLink href="https://job-listing-601d2.firebaseapp.com/" target="_blank" >Visit the App</VisitContainerLink>
-                  </p>
-                  <img src={VisitLogo} style={{ transform: "rotate(270deg)" }} />
-                </VisitContainer>
-              </div>
+                  <VisitContainer>
+                    <p>
+                      <VisitContainerLink
+                        href="https://job-listing-601d2.firebaseapp.com/"
+                        target="_blank"
+                      >
+                        Visit the App
+                      </VisitContainerLink>
+                    </p>
+                    <img
+                      src={VisitLogo}
+                      style={{ transform: "rotate(270deg)" }}
+                    />
+                  </VisitContainer>
+                </ViewandVisitContainer>
               </SlideProjectDescription>
             </SlideContainer>
           </Slide>
@@ -240,7 +308,9 @@ function Portfolio() {
               </div>
               <p>
                 If you want to see more projects visit my{" "}
-                <GithubLink href="https://github.com/Tusho7" target="_blank">Github</GithubLink>
+                <GithubLink href="https://github.com/Tusho7" target="_blank">
+                  Github
+                </GithubLink>
               </p>
             </IfYouWantSee>
           </Slide>
@@ -269,7 +339,6 @@ function Portfolio() {
           onClick={() => setCurrentSlide(4)}
         ></Circles>
       </CirclesContainer>
-
     </>
   );
 }

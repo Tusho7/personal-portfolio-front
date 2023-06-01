@@ -17,4 +17,7 @@ export const Button = styled.button`
         background-color: #f0f8ff;
         color: black;
     }
+    @media (min-width: 1440px){
+        font-size: 22px;
+    }
 `

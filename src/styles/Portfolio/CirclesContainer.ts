@@ -6,4 +6,7 @@ export const CirclesContainer = styled.div`
     align-items: center;
     justify-content: center;
     margin-top: 60px;    
+    @media (min-width: 1440px){
+        gap: 18px;
+    }
 `

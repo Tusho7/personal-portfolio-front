@@ -14,7 +14,50 @@ function About() {
     <>
     <AboutMainContainer>
       <div>
-      <AboutTitle>Hi, I'm Sandro Tushurashvili Web Developer</AboutTitle>
+      <AboutTitle>
+        <span>H</span>
+        <span>i</span>
+        <span>,</span>
+        <span> </span>
+        <span>I</span>
+        <span>'</span>
+        <span>m</span>
+        <span> </span>
+        <span>S</span>
+        <span>a</span>
+        <span>n</span>
+        <span>d</span>
+        <span>r</span>
+        <span>o</span>
+        <span> </span>
+        <span>T</span>
+        <span>u</span>
+        <span>s</span>
+        <span>h</span>
+        <span>u</span>
+        <span>r</span>
+        <span>a</span>
+        <span>s</span>
+        <span>h</span>
+        <span>v</span>
+        <span>i</span>
+        <span>l</span>
+        <span>i</span>
+        <span> </span>
+        <span>W</span>
+        <span>e</span>
+        <span>b</span>
+        <span> </span>
+        <span>D</span>
+        <span>e</span>
+        <span>v</span>
+        <span>e</span>
+        <span>l</span>
+        <span>o</span>
+        <span>p</span>
+        <span>e</span>
+        <span>r</span>
+        </AboutTitle>
       <br></br>
       <AboutDescription>Full Stack Developer / Javascript Fan</AboutDescription>
       </div>

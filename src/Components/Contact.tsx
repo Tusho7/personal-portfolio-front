@@ -4,6 +4,7 @@ import MyGlobe from "./MyGlobe"
 import CodeLogo from "../assets/code-logo.svg";
 import { CodeLogoContainer } from "../styles/Contact-styles/CodeLogoContainer";
 import { CodeImg } from "../styles/Home-Styles/CodeImg";
+import { MediaTitle } from "../styles/Contact-styles/MediaTitle";
 
 function Contact() {
   return (
@@ -12,6 +13,7 @@ function Contact() {
 
         <p>What would you do if you had a software expert available at your fingertips?</p>
         <p>Want to start new project? Contact me on <a href='https://www.linkedin.com/in/sandro-tushurashvili/' target='_blank'>Linkedin</a>.</p>
+        <MediaTitle>sandrotushurashvili7@gmail.com</MediaTitle>
         <p>You can also follow me on <a href='https://www.instagram.com/sandrotushurashvili/' target='_blank'>Intagram</a>.</p>
         </ContactTitlesContainer>
 

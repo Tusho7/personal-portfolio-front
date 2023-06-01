@@ -14,4 +14,7 @@ export const HeaderMainContainer = styled.div`
   @media (min-width: 768px) {
     padding: 30px;
   }
+  @media (min-width: 1440px){
+    padding: 50px;
+  }
 `;

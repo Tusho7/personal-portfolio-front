@@ -13,4 +13,10 @@ export const PurpleRomb = styled.img`
         top: 320px;
         left: 300px;
     }
+    @media (min-width: 1440px){
+        width: 240px;
+        height: 240px;
+        top: 110px;
+        left: 420px;
+    }
 `

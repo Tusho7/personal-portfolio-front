@@ -14,4 +14,10 @@ export const CodeImgAbout = styled.img`
     width: 600px;
     top: -100px;
   }
+  @media (min-width: 1440px){
+    left: 900px;
+    width: 700px;
+    height: 650px;
+    top: -120px;
+  }
 `;

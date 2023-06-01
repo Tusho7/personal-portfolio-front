@@ -13,4 +13,10 @@ export const LogosContainer = styled.div`
         justify-content: center;
         row-gap: 40px;
     }
+    @media (min-width: 1440px){
+        display: grid;
+        grid-template-columns: auto auto auto auto auto;
+        row-gap: 40px;
+        column-gap: 65px;
+    }
 `

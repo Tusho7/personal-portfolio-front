@@ -6,4 +6,7 @@ export const SlidesDescription = styled.p`
   @media (min-width: 768px){
     font-size: 22px;
   }
+  @media (min-width: 1440px){
+    font-size: 30px;
+  }
 `;

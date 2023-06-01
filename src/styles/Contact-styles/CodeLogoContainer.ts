@@ -8,4 +8,7 @@ export const CodeLogoContainer = styled.div`
         top: -95px;
         left: 570px;
     }
+    @media (min-width: 1440px){
+        display: none;
+    }
 `

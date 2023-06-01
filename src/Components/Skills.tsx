@@ -21,7 +21,27 @@ function Skills() {
     <div>
         <SkillsAndExperienceContainer>
 
-      <SkillsAndExperience>Skills & Experience</SkillsAndExperience>
+      <SkillsAndExperience>
+        <span>S</span>
+        <span>k</span>
+        <span>i</span>
+        <span>l</span>
+        <span>l</span>
+        <span>s</span>
+        <span> </span>
+        <span>&</span>
+        <span> </span>
+        <span>E</span>
+        <span>x</span>
+        <span>p</span>
+        <span>e</span>
+        <span>r</span>
+        <span>i</span>
+        <span>e</span>
+        <span>n</span>
+        <span>c</span>
+        <span>e</span>
+</SkillsAndExperience>
       <AboutSkills>
         HTML, CSS, JS, SASS, REACT, TYPESCRIPT, STYLED-COMPONENTS, NODEJS, GIT,
         VISUAL STUDIO, FIGMA,{" "}

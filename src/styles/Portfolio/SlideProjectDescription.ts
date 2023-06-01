@@ -13,4 +13,10 @@ export const SlideProjectDescription = styled.div`
       font-size: 40px;
     }
   }
+  @media (min-width: 1440px){
+    h1{
+      width: 75%;
+      font-size: 55px;
+    }
+  }
 `;

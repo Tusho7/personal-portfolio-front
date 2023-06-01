@@ -6,4 +6,7 @@ export const Category = styled.p`
   @media (min-width: 768px){
     font-size: 20px;
   }
+  @media (min-width: 1440px){
+    font-size: 25px;
+  }
 `;

@@ -7,4 +7,8 @@ export const HomeDescription = styled.p`
   @media (min-width: 768px) {
     font-size: 18px;
   }
+  @media (min-width: 1440px){
+    font-size: 22px;
+    line-height: 24px;
+  }
 `;

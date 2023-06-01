@@ -11,4 +11,7 @@ export const HomeMainContainer = styled.div`
     flex-direction: row-reverse;
     margin-top: 200px;
   }
+  @media (min-width: 1440px){
+    margin-top: 95px;
+  }
 `;

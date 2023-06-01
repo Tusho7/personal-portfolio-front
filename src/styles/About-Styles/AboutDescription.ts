@@ -7,4 +7,7 @@ export const AboutDescription = styled.p`
     opacity: .7;
     font-size: 16px;
     line-height: 24px;
+    @media (min-width: 1440px){
+        font-size: 20px;
+    }
 `

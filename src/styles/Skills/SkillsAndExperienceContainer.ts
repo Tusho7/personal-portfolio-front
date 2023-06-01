@@ -16,4 +16,10 @@ export const SkillsAndExperienceContainer = styled.div`
             font-size: 17px;
         }
     }
+    @media (min-width: 1440px){
+        p{
+            font-size: 22px;
+            width: 50%;
+        }
+    }
 `

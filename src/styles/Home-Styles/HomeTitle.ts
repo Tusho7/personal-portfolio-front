@@ -42,4 +42,9 @@ export const HomeTitle = styled.h1`
     width: 60%;
     font-size: 50px
   }
+  @media (min-width: 1440px){
+    width: 70%;
+    font-size: 55px;
+    line-height: 1.1;
+  }
 `;

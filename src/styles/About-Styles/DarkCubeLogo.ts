@@ -11,4 +11,9 @@ export const DarkCubeLogo = styled.img`
     width: 150px;
     top: 120px;
   }
+  @media (min-width: 1440px){
+    width: 250px;
+    height: 250px;
+    left: 200px;
+  }
 `;

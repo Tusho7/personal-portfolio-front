@@ -9,4 +9,7 @@ export const ContactTitlesContainer = styled.div`
         margin: auto;
         align-items: flex-start;
     }
+    @media (min-width: 1440px){
+        padding-top: 20px;
+    }
 `

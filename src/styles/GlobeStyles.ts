@@ -8,4 +8,7 @@ export const GlobeStyles = styled.div`
   @media (min-width: 768px){
     padding-top: 80px;
   }
+  @media (min-width: 1440px){
+    padding-top: 0px;
+  }
 `;

@@ -8,4 +8,8 @@ export const Description = styled.p`
     text-align: center;
     line-height: 1.6;
   }
+  @media (min-width: 1440px){
+    font-size: 30px;
+    width: 63%;
+  }
 `;

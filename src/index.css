@@ -12,10 +12,17 @@ body{
   background-color: #000011;
   font-family: "Source Sans Pro",sans-serif;
   padding: 20px;
+  overflow-x: hidden;
 }
 
 @media (min-width: 768px) {
   body {
     padding: 30px;
+  }
+}
+
+@media (min-width: 1440px) {
+  body {
+    padding: 50px;
   }
 }

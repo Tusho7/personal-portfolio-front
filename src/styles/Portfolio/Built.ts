@@ -6,4 +6,8 @@ export const Built = styled.p`
   span{
     font-weight: bold;
   }
+  @media (min-width: 1440px){
+    font-size: 20px;
+    width: 90%;
+  }
 `;

@@ -8,4 +8,7 @@ export const AboutSecondDescription = styled.p`
     font-size: 20px;
     line-height: 28px;
   }
+  @media (min-width: 1440px){
+    font-size: 27px;
+  }
 `;
