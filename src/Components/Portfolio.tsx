@@ -54,7 +54,7 @@ function Portfolio() {
       <PortfolioMainContainer>
         {currentSlide === 0 && (
           <SpheroContainer>
-            <Slide visible={true} isCurrentSlide0={currentSlide === 0}>
+            <Slide visible="true" iscurrentslide0="currentSlide === 0">
               <MainTitle>
                 <span>P</span>
                 <span>o</span>
@@ -115,7 +115,7 @@ function Portfolio() {
         )}
 
         {currentSlide === 1 && (
-          <Slide visible={true} isCurrentSlide0={currentSlide === 1}>
+          <Slide visible="true" iscurrentslide0="currentSlide === 1">
             <SlideContainer>
               <ProjectImage
                 src={`https://nice-lime-shark-garb.cyclic.app/images/${
@@ -177,7 +177,7 @@ function Portfolio() {
         )}
 
         {currentSlide === 2 && (
-          <Slide visible={true} isCurrentSlide0={currentSlide === 2}>
+          <Slide visible="true" iscurrentslide0="currentSlide === 2">
             <SlideContainer>
               <ProjectImage
                 src={`https://nice-lime-shark-garb.cyclic.app/images/${
@@ -239,7 +239,7 @@ function Portfolio() {
         )}
 
         {currentSlide === 3 && (
-          <Slide visible={true} isCurrentSlide0={currentSlide === 3}>
+          <Slide visible="true" iscurrentslide0="currentSlide === 3">
             <SlideContainer>
               <ProjectImage
                 src={`https://nice-lime-shark-garb.cyclic.app/images/${
@@ -301,7 +301,7 @@ function Portfolio() {
         )}
 
         {currentSlide === 4 && (
-          <Slide visible={true} isCurrentSlide0={currentSlide === 4}>
+          <Slide visible="true" iscurrentslide0="currentSlide === 4">
             <IfYouWantSee>
               <div>
                 <CodeLogoImg src={CodeLogo} />
@@ -319,23 +319,23 @@ function Portfolio() {
 
       <CirclesContainer>
         <Circles
-          active={currentSlide === 0}
+          active="currentSlide === 0"
           onClick={() => setCurrentSlide(0)}
         ></Circles>
         <Circles
-          active={currentSlide === 1}
+          active="currentSlide === 1"
           onClick={() => setCurrentSlide(1)}
         ></Circles>
         <Circles
-          active={currentSlide === 2}
+          active="currentSlide === 2"
           onClick={() => setCurrentSlide(2)}
         ></Circles>
         <Circles
-          active={currentSlide === 3}
+          active="currentSlide === 3"
           onClick={() => setCurrentSlide(3)}
         ></Circles>
         <Circles
-          active={currentSlide === 4}
+          active="currentSlide === 4"
           onClick={() => setCurrentSlide(4)}
         ></Circles>
       </CirclesContainer>

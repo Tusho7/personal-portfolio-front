@@ -1,8 +1,7 @@
 import styled, { css } from "styled-components"
+import { CircleProp } from "../../types/circle-type";
 
-interface CircleProp {
-    active: boolean;
-  }
+
 
 
 export const Circles = styled.div<CircleProp>`

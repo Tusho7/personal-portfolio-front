@@ -102,7 +102,7 @@ function Skills() {
 
         <LogoAndTitleContainer>
           <Svg
-            enable-background="new 0 0 24 24"
+            enableBackground="new 0 0 24 24"
             viewBox="0 0 24 24"
             id="typescript"
           >
@@ -135,7 +135,7 @@ function Skills() {
           <Svg
             width="335"
             height="335"
-            enable-background="0 0 24 24"
+            enableBackground="0 0 24 24"
             viewBox="0 0 24 24"
             fill="none"
             xmlns="http://www.w3.org/2000/Svg"
