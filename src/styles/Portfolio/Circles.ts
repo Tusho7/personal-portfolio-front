@@ -1,8 +1,5 @@
 import styled, { css } from "styled-components"
-import { CircleProp } from "../../types/circle-type";
-
-
-
+import { CircleProp } from "../../types/circle-type"
 
 export const Circles = styled.div<CircleProp>`
     width: 6px;

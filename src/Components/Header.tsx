@@ -3,15 +3,25 @@ import { HeaderContainer } from "../styles/Header-Styles/HeaderContainer";
 import { HeaderLogo } from "../styles/Header-Styles/HeaderLogo";
 import { HeaderMainContainer } from "../styles/Header-Styles/HeaderMainContainer";
 import { HeaderTitle } from "../styles/Header-Styles/HeaderTitle";
+import hoverAudio from "../assets/hover0.mp3";
+import { useState } from "react";
 
 function Header() {
+  const [audio] = useState(new Audio(hoverAudio));
 
   const handleLogoClick = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
+    playAudio();
   };
 
   const handleContactClick = () => {
     window.scrollTo({ top: document.documentElement.scrollHeight, behavior: "smooth" });
+    playAudio();
+  };
+
+  const playAudio = () => {
+    audio.currentTime = 0;
+    audio.play();
   };
   
 

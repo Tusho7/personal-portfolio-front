@@ -1,3 +1,3 @@
 export interface CircleProp {
-    active: string;
+    active: boolean;
   }

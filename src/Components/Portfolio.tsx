@@ -30,13 +30,16 @@ import { CodeLogoImg } from "../styles/Portfolio/CodeLogoImg";
 import { SlidesDescription } from "../styles/Portfolio/SlidesDescription";
 import { SlideProjectDescription } from "../styles/Portfolio/SlideProjectDescription";
 import { ViewandVisitContainer } from "../styles/Portfolio/ViewandVisitContainer";
+import hoverAudio from "../assets/hover0.mp3";
 
 function Portfolio() {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [project, setProject] = useState<DataTypes[]>([]);
+  const [audio] = useState(new Audio(hoverAudio));
 
   const handleSeeProjectsClick = () => {
     setCurrentSlide(1);
+    playAudio();
   };
 
   useEffect(() => {
@@ -48,6 +51,15 @@ function Portfolio() {
     };
     fetchData();
   }, []);
+
+  const playAudio = () => {
+    audio.currentTime = 0;
+    audio.play();
+  };
+
+  const handleClick = () => {
+    playAudio();
+  };
 
   return (
     <>
@@ -93,6 +105,7 @@ function Portfolio() {
                 <ContactMe
                   href="https://www.linkedin.com/in/sandro-tushurashvili/"
                   target="_blank"
+                  onClick={handleClick}
                 >
                   {" "}
                   Contact me!
@@ -146,6 +159,7 @@ function Portfolio() {
                       <VisitContainerLink
                         href="https://github.com/Tusho7/audiophile-ecommerce-website-front"
                         target="_blank"
+                        onClick={handleClick}
                       >
                         View the Code
                       </VisitContainerLink>
@@ -161,6 +175,7 @@ function Portfolio() {
                       <VisitContainerLink
                         href="https://audiophile-ecommerce-7e976.firebaseapp.com/"
                         target="_blank"
+                        onClick={handleClick}
                       >
                         Visit the App
                       </VisitContainerLink>
@@ -208,6 +223,7 @@ function Portfolio() {
                       <VisitContainerLink
                         href="https://github.com/Tusho7/entertainment-web-app-front"
                         target="_blank"
+                        onClick={handleClick}
                       >
                         View the Code
                       </VisitContainerLink>
@@ -223,6 +239,7 @@ function Portfolio() {
                       <VisitContainerLink
                         href="https://entertainment-web-app-ade77.web.app/"
                         target="_blank"
+                        onClick={handleClick}
                       >
                         Visit the App
                       </VisitContainerLink>
@@ -270,6 +287,7 @@ function Portfolio() {
                       <VisitContainerLink
                         href="https://github.com/Tusho7/job-listing-sandro-front"
                         target="_blank"
+                        onClick={handleClick}
                       >
                         View the Code
                       </VisitContainerLink>
@@ -285,6 +303,7 @@ function Portfolio() {
                       <VisitContainerLink
                         href="https://job-listing-601d2.firebaseapp.com/"
                         target="_blank"
+                        onClick={handleClick}
                       >
                         Visit the App
                       </VisitContainerLink>
@@ -308,7 +327,7 @@ function Portfolio() {
               </div>
               <p>
                 If you want to see more projects visit my{" "}
-                <GithubLink href="https://github.com/Tusho7" target="_blank">
+                <GithubLink href="https://github.com/Tusho7" target="_blank" onClick={handleClick}>
                   Github
                 </GithubLink>
               </p>
@@ -319,24 +338,39 @@ function Portfolio() {
 
       <CirclesContainer>
         <Circles
-          active="currentSlide === 0"
-          onClick={() => setCurrentSlide(0)}
+          active={currentSlide === 0}
+          onClick={() => {
+            setCurrentSlide(0);
+            handleClick();
+          }}
         ></Circles>
         <Circles
-          active="currentSlide === 1"
-          onClick={() => setCurrentSlide(1)}
+          active={currentSlide === 1}
+          onClick={() => {
+            setCurrentSlide(1);
+            handleClick();
+          }}
         ></Circles>
         <Circles
-          active="currentSlide === 2"
-          onClick={() => setCurrentSlide(2)}
+          active={currentSlide === 2}
+          onClick={() => {
+            setCurrentSlide(2);
+            handleClick();
+          }}
         ></Circles>
         <Circles
-          active="currentSlide === 3"
-          onClick={() => setCurrentSlide(3)}
+          active={currentSlide === 3}
+          onClick={() => {
+            setCurrentSlide(3);
+            handleClick();
+          }}
         ></Circles>
         <Circles
-          active="currentSlide === 4"
-          onClick={() => setCurrentSlide(4)}
+          active={currentSlide === 4}
+          onClick={() => {
+            setCurrentSlide(4);
+            handleClick();
+          }}
         ></Circles>
       </CirclesContainer>
     </>
