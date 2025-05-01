@@ -12,3 +12,10 @@ export const GlobeStyles = styled.div`
     padding-top: 0px;
   }
 `;
+
+export const Main = styled.div`
+  max-width: 1350px;
+  margin: 0 auto;
+  width: 100%;
+  `;
+  

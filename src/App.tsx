@@ -6,6 +6,7 @@ import Home from "./Components/Home";
 import Portfolio from "./Components/Portfolio";
 import Skills from "./Components/Skills";
 import audioFile from "./assets/default.mp3";
+import { Main } from "./styles/GlobeStyles";
 
 interface AudioPlayerProps {
   src: string;
@@ -45,7 +46,7 @@ function App() {
   };
 
   return (
-    <div>
+    <Main>
       <AudioPlayer src={audioFile} isMuted={isMuted} toggleMute={handleToggleMute} />
       <Header />
       <Home />
@@ -74,7 +75,7 @@ function App() {
       >
         {isMuted ? "Sound Off" : "Sound On"}
       </button>
-    </div>
+    </Main>
   );
 }
 
